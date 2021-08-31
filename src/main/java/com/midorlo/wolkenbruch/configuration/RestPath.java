@@ -5,7 +5,7 @@ public enum RestPath {
    files("/accounts"),
    accounts("/accounts");
 
-   String value;
+   final String value;
 
    RestPath(String value) {
       this.value = "/api/v1" + value;

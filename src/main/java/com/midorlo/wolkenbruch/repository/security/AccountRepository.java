@@ -4,7 +4,6 @@ import com.midorlo.wolkenbruch.domain.security.Account;
 import com.midorlo.wolkenbruch.repository.ApplicationRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 import java.util.Optional;
 
 @Repository

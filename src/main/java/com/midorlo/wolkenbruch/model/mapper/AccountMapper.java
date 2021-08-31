@@ -14,7 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.stream.Collectors;
 
 /**
- * Maps any account related dto to a account pojo. Validates against field defaults.
+ * Maps any account related dto to an account pojo. Validates against field defaults.
  */
 public class AccountMapper {
 

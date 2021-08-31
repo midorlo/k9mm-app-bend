@@ -25,13 +25,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Slf4j
 public class WebSecurityConfigurerAdapterImpl extends WebSecurityConfigurerAdapter {
 
-    private final ApplicationProperties properties;
-    private final AuthenticationService provider;
-
     public WebSecurityConfigurerAdapterImpl(AuthenticationService provider,
                                             ApplicationProperties properties) {
-        this.provider   = provider;
-        this.properties = properties;
     }
 
     /**
