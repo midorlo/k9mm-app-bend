@@ -1,0 +1,89 @@
+{
+   "properties": [
+      {
+         "name": "wolkenbruch",
+         "type": "java.lang.String",
+         "description": "Service specific configuration."
+      },
+      {
+         "name": "wolkenbruch.storage",
+         "type": "java.lang.String",
+         "description": "Storage configuration."
+      },
+      {
+         "name": "wolkenbruch.storage.basedir",
+         "type": "java.lang.String",
+         "description": "Root folder of all stored files."
+      },
+      {
+         "name": "wolkenbruch.security.content-security-policy",
+         "type": "java.lang.String",
+         "description": "Content Security Policy."
+      },
+      {
+         "name": "wolkenbruch.security.registration.default-language",
+         "type": "java.lang.String",
+         "description": "Default language for new Accounts."
+      },
+      {
+         "name": "wolkenbruch.rest.header-field-name-total-count",
+         "type": "java.lang.String",
+         "description": "Header field name holding the total record count."
+      },
+      {
+         "name": "wolkenbruch.security.registration.require-activation",
+         "type": "java.lang.String",
+         "description": "Determines if newly registered accounts do require (e-mail based) activation."
+      },
+      {
+         "name": "wolkenbruch.security.registration.default-authority",
+         "type": "java.lang.String",
+         "description": "Default Authority for newly registered Accounts."
+      },
+      {
+         "name": "springdoc.version",
+         "type": "java.lang.String",
+         "description": "Propagates as application Version in generated API documentation."
+      },
+      {
+         "name": "wolkenbruch.apidocs.title",
+         "type": "java.lang.String",
+         "description": "todo Description for wolkenbruch.apidocs.title."
+      },
+      {
+         "name": "wolkenbruch.apidocs.description",
+         "type": "java.lang.String",
+         "description": "todo Description for wolkenbruch.apidocs.description."
+      },
+      {
+         "name": "wolkenbruch.apidocs.tos",
+         "type": "java.lang.String",
+         "description": "todo Description for wolkenbruch.apidocs.tos."
+      },
+      {
+         "name": "wolkenbruch.apidocs.license.url",
+         "type": "java.lang.String",
+         "description": "todo Description for wolkenbruch.apidocs.license.url."
+      },
+      {
+         "name": "wolkenbruch.apidocs.contact.name",
+         "type": "java.lang.String",
+         "description": "todo Description for wolkenbruch.apidocs.contact.name."
+      },
+      {
+         "name": "wolkenbruch.apidocs.contact.email",
+         "type": "java.lang.String",
+         "description": "todo Description for wolkenbruch.apidocs.contact.email."
+      },
+      {
+         "name": "wolkenbruch.apidocs.license.name",
+         "type": "java.lang.String",
+         "description": "todo Description for wolkenbruch.apidocs.license.name."
+      },
+      {
+         "name": "wolkenbruch.version",
+         "type": "java.lang.String",
+         "description": "Application Version."
+      }
+   ]
+}

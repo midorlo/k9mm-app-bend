@@ -1,0 +1,86 @@
+wolkenbruch:
+  version: 0.0.1-SNAPSHOT
+  storage:
+    basedir: .data
+    basedir2: E://Projekte/wolkenbruch/.data/
+  apidocs:
+    title: Wolkenbruch API Documentation
+    description: This is the Wolkenbruch server API Documentation.
+    tos: https://midorlo.com/terms/
+    license:
+      name: Apache 2.0
+      url: http://springdoc.org
+    contact:
+      name: midorlo
+      email: contact@midorlo.com
+  rest:
+    header-field-name-total-count: X-Total-Count
+  security:
+    authorization:
+      header-name: Authorization
+    authentication:
+      jwt:
+        secret: MzgxNjBhNzIxMzM0MjFhMGE1M2Q1YTY4NWQ2MTcyODhjYTc3MTI1MzkzZDM5NWFmODFmMTYxOTJlNzIxMGM4NWQ2MjI0NTIyODM4ZTQxNDUzMTE0NzhjN2E0NzE2M2MxMzg0MjhhNWRkYjA4M2FiZjY0OWYxYWI3N2UwNTlhNGE=
+        token-validity-in-seconds: 86400
+        token-validity-in-seconds-for-remember-me: 2592000
+    registration:
+      default-authority: ACCOUNT
+      default-language: de
+      require-activation: false
+
+spring:
+  datasource:
+    hikari:
+      pool-name: wolkenbruch
+      password: dev
+      username: dev
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/dev?currentSchema=wolkenbruch
+    password: dev
+    username: dev
+  jpa:
+    open-in-view: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  sql:
+    init:
+      mode: never
+  security:
+    user:
+      password: dev
+springdoc:
+  version: 1
+  api-docs:
+    groups:
+      enabled: true
+    resolve-schema-properties: true
+  auto-tag-classes: true
+  packages-to-scan:
+    - com.midorlo.wolkenbruch.rest
+  enable-native-image-support: true
+  show-actuator: false
+  swagger-ui:
+    show-common-extensions: true
+server:
+  port: 3000
+management:
+  # Enable every Actuator endpoint.
+  endpoint:
+    shutdown:
+      enabled: true
+logging:
+  # Debug logging for own scope.
+  level:
+    com:
+      midorlo:
+        wolkenbruch: DEBUG
+
+
+
+
