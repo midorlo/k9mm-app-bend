@@ -11,11 +11,11 @@
     <artifactId>k9-app-bend</artifactId>
     <packaging>jar</packaging>
 
-    <name>K9 Backend</name>
+    <name>[App] K9 Backend</name>
     <description>K9's backend application</description>
 
     <properties>
-        <mainClass>com.midorlo.k9.BendApplication</mainClass>
+        <mainClass>com.midorlo.k9.K9Application</mainClass>
     </properties>
 
     <build>
@@ -57,12 +57,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-            <version>2.5.3</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>2.5.3</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -110,21 +108,7 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-        <!--
-           Spring Docs Dependencies:
-              - OpenApi UI
-              - OpenApi Rest
-        -->
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-ui</artifactId>
-            <version>${springdoc-openapi-ui.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-data-rest</artifactId>
-            <version>${springdoc-openapi-data-rest.version}</version>
-        </dependency>
+
         <!-- Hikari -->
         <dependency>
             <groupId>com.zaxxer</groupId>
@@ -135,13 +119,13 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.23</version>
+            <version>${postgresql.version}</version>
         </dependency>
         <!--Lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <version>${lombok.version}</version>
             <optional>true</optional>
         </dependency>
         <!--
