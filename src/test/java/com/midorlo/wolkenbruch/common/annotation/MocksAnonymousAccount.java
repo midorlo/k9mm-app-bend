@@ -1,4 +1,4 @@
-//package com.midorlo.wolkenbruch.common.annotation;
+//package com.midorlo.k9.common.annotation;
 //
 //import org.springframework.security.core.context.SecurityContext;
 //import org.springframework.security.core.context.SecurityContextHolder;

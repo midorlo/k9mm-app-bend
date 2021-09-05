@@ -1,11 +1,11 @@
-wolkenbruch:
+k9:
   version: 0.0.1-SNAPSHOT
   storage:
     basedir: .data
-    basedir2: E://Projekte/wolkenbruch/.data/
+    basedir2: E://Projekte/k9/.data/
   apidocs:
-    title: Wolkenbruch API Documentation
-    description: This is the Wolkenbruch server API Documentation.
+    title: k9 API Documentation
+    description: This is the k9 server API Documentation.
     tos: https://midorlo.com/terms/
     license:
       name: Apache 2.0
@@ -17,7 +17,7 @@ wolkenbruch:
     header-field-name-total-count: X-Total-Count
   security:
     authorization:
-      header-name: Authorization
+      header-name: Bearer
     authentication:
       jwt:
         secret: MzgxNjBhNzIxMzM0MjFhMGE1M2Q1YTY4NWQ2MTcyODhjYTc3MTI1MzkzZDM5NWFmODFmMTYxOTJlNzIxMGM4NWQ2MjI0NTIyODM4ZTQxNDUzMTE0NzhjN2E0NzE2M2MxMzg0MjhhNWRkYjA4M2FiZjY0OWYxYWI3N2UwNTlhNGE=
@@ -31,12 +31,12 @@ wolkenbruch:
 spring:
   datasource:
     hikari:
-      pool-name: wolkenbruch
+      pool-name: k9
       password: dev
       username: dev
     driver-class-name: org.postgresql.Driver
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/dev?currentSchema=wolkenbruch
+    url: jdbc:postgresql://localhost:5432/dev?currentSchema=k9
     password: dev
     username: dev
   jpa:
@@ -62,7 +62,7 @@ springdoc:
     resolve-schema-properties: true
   auto-tag-classes: true
   packages-to-scan:
-    - com.midorlo.wolkenbruch.rest
+    - com.midorlo.k9.rest
   enable-native-image-support: true
   show-actuator: false
   swagger-ui:
@@ -79,7 +79,7 @@ logging:
   level:
     com:
       midorlo:
-        wolkenbruch: DEBUG
+        k9: DEBUG
 
 
 
