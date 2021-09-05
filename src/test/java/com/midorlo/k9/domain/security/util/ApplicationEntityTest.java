@@ -1,7 +1,7 @@
-package com.midorlo.wolkenbruch.domain.util;
+package com.midorlo.k9.domain.security.util;
 
-import com.midorlo.wolkenbruch.common.TestUtils;
-import com.midorlo.wolkenbruch.domain.ApplicationEntity;
+import com.midorlo.k9.common.TestUtils;
+import com.midorlo.k9.domain.core.ApplicationEntity;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

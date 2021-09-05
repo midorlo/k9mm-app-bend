@@ -1,6 +1,6 @@
-package com.midorlo.wolkenbruch.common.annotation;
+package com.midorlo.k9.common.annotation;
 
-import com.midorlo.wolkenbruch.BendApplication;
+import com.midorlo.k9.K9Application;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
@@ -23,6 +23,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @AutoConfigureMockMvc
-@SpringBootTest(classes = BendApplication.class)
+@SpringBootTest(classes = K9Application.class)
 @ActiveProfiles("int")
 public @interface IntegrationTest {}

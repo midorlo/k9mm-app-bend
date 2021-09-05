@@ -1,4 +1,4 @@
-package com.midorlo.wolkenbruch.common;
+package com.midorlo.k9.common;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.web.bind.annotation.*;

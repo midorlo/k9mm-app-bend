@@ -1,4 +1,4 @@
-package com.midorlo.wolkenbruch.common;
+package com.midorlo.k9.common;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;

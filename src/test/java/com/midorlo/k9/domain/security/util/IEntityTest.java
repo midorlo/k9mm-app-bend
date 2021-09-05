@@ -1,4 +1,4 @@
-package com.midorlo.wolkenbruch.domain.util;
+package com.midorlo.k9.domain.security.util;
 
 /**
  * Simple contract for entity Tests.
