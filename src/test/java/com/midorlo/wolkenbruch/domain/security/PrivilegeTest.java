@@ -15,8 +15,8 @@
 //
 //    @BeforeEach
 //    public void setup() {
-//        e1 = (Privilege) new Privilege().setId(1L).setName("1");
-//        e2 = (Privilege) new Privilege().setId(1L).setName("1");
+//        e1 = (Privilege) new Privilege().setId(1L).setDisplayName("1");
+//        e2 = (Privilege) new Privilege().setId(1L).setDisplayName("1");
 //    }
 //
 //    @Override
@@ -45,13 +45,13 @@
 //
 //    @Test
 //    public void nameNotEqual() {
-//        e1.setName("2");
+//        e1.setDisplayName("2");
 //        assertThat(e1).isNotEqualTo(e2);
 //    }
 //
 //    @Test
 //    public void nameNull() {
-//        e1.setName(null);
+//        e1.setDisplayName(null);
 //        assertThat(e1).isNotEqualTo(e2);
 //    }
 //

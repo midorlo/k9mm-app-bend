@@ -1,7 +1,7 @@
 package com.midorlo.k9.domain.security.util;
 
 import com.midorlo.k9.common.TestUtils;
-import com.midorlo.k9.domain.core.ApplicationEntity;
+import com.midorlo.k9.domain.util.ApplicationEntity;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

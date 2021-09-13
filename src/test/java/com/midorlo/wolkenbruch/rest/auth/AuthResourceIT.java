@@ -33,7 +33,7 @@
 //        this.randomPassword = new RandomPasswordGenerator().generateSecureRandomPassword();
 //        this.account = accountRepository.saveAndFlush(new Account("test", "test@localhost", randomPassword, true,
 //                null));
-//        this.dto     = new LoginDto(account.getName(), randomPassword, "", true);
+//        this.dto     = new LoginDto(account.getDisplayName(), randomPassword, "", true);
 //    }
 //
 //    @Test

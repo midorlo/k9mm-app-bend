@@ -29,7 +29,7 @@
 //    @BeforeEach
 //    public void init() {
 //        account = new Account()
-//                .setName("test")
+//                .setDisplayName("test")
 //                .setPasswordHash(passwordEncoder.encode("test"))
 //                .setLogin("test@localhost");
 //    }

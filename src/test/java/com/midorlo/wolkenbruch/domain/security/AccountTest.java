@@ -16,10 +16,10 @@
 //    public void setup() {
 //        e1 = new Account();
 //        e1.setId(1L);
-//        e1.setName("1");
+//        e1.setDisplayName("1");
 //        e2 = new Account();
 //        e2.setId(1L);
-//        e2.setName("1");
+//        e2.setDisplayName("1");
 //    }
 //
 //    @Test
@@ -34,7 +34,7 @@
 //
 //    @Test
 //    public void nameNotEqual() {
-//        e1.setName("2");
+//        e1.setDisplayName("2");
 //        assertThat(e1).isNotEqualTo(e2);
 //    }
 //}
