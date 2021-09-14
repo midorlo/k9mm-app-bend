@@ -84,7 +84,7 @@
             <exclusions>
                 <!--
                 Replace Tomcat with Undertow. Here's why:
-                https://www.baeldung.com/spring-boot-servlet-containers
+                https://www.baeldung.com/spring-boot-servletEntity-containers
                 -->
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
