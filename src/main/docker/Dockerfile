@@ -1,4 +1,6 @@
+# Notice: Run with the module root as context root, else you will be unable to copy the jar!
+
 FROM adoptopenjdk/openjdk11
 MAINTAINER midorlo.com
-COPY target/k9-bend-1.0.0.jar k9-bend-1.0.0.jar
-ENTRYPOINT ["java","-jar","/k9-1.0.0.jar"]
+COPY dist/k9-lib-security.jar ./k9-lib-security.jar
+ENTRYPOINT ["java","-jar","/k9-lib-security.jar"]

@@ -10,31 +10,31 @@ services:
   ##############################################################################
   # Bend Application                                                           #
   ##############################################################################
-  k9-bend:
-    container_name: k9-bend
+  k9-lib-security:
+    container_name: k9-lib-security
     build:
-      context: k9-bend
-      dockerfile: ./Dockerfile
-    image: k9-bend:latest
+      context: ../../../
+      dockerfile: src/main/docker/Dockerfile
+    image: k9-lib-security:latest
     ports:
-      - "3000:3000"
+      - "8080:8080"
     networks:
       - k9-bridged-network
     volumes:
-      - data:~/.k9/volumes/k9/
+      - ../../../../.data/volumes/security:/data
 
-  ##############################################################################
-  # Postgres Database                                                          #
-  ##############################################################################
-  db:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_USER: k9
-      POSTGRES_PASSWORD: k9
-    ports:
-      - "5000:5432"
-    networks:
-      - k9-bridged-network
-    volumes:
-      - postgres-data:~/.k9/volumes/postgres
+#  ##############################################################################
+#  # Postgres Database                                                          #
+#  ##############################################################################
+#  db:
+#    image: postgres
+#    restart: always
+#    environment:
+#      POSTGRES_USER: k9
+#      POSTGRES_PASSWORD: k9
+#    ports:
+#      - "5000:5432"
+#    networks:
+#      - k9-bridged-network
+#    volumes:
+#      - postgres-data:~/.k9/volumes/postgres
