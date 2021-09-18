@@ -11,7 +11,7 @@
     <artifactId>k9-app-bend</artifactId>
     <packaging>jar</packaging>
 
-    <name>[App] K9 Backend</name>
+    <name>k9</name>
     <description>K9's backend application</description>
 
     <properties>
@@ -35,121 +35,14 @@
     </build>
 
     <dependencies>
-
         <dependency>
             <groupId>com.midorlo.k9</groupId>
             <artifactId>k9-lib-security</artifactId>
-            <version>${k9-lib-security.version}</version>
-        </dependency>
-
-        <!--
-           Spring Boot Dependencies:
-              - Actuator
-              - Data JPA Starter
-              - Data REST Starter
-              - Configuration Processor
-              - Security Starter
-              - Web Starter
-              - Undertow
-              - Developer Tools
-              - Test Starter
-         -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-rest</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-undertow</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <!--
-                Replace Tomcat with Undertow. Here's why:
-                https://www.baeldung.com/spring-boot-servletEntity-containers
-                -->
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <version>2.5.4</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <!--
-               Developer tools are automatically disabled when running the fully packaged application
-               (via java -jar ..). Flagging the dependency as optional in Maven is a best practice
-               that prevents devtools from being transitively applied to other modules.
-            -->
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <!-- Hikari -->
-        <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>4.0.3</version>
-        </dependency>
-        <!--Postgresql-->
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>${postgresql.version}</version>
-        </dependency>
-        <!--Lombok-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-            <optional>true</optional>
-        </dependency>
-        <!--
-           JsonWebToken Dependencies
-              - jjwt-api
-              - jjwt-impl
-              - jjwt-jackson
-        -->
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt-api</artifactId>
-            <version>0.11.2</version>
-        </dependency>
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt-impl</artifactId>
-            <version>0.11.2</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt-jackson</artifactId>
-            <version>${jjwt-jackson.version}</version>
-            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
